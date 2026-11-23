@@ -40,6 +40,13 @@
       font-size: 13px;
       margin-bottom: 16px;
     }
+    .highlight-box {
+      background: rgba(222, 180, 92, 0.08);
+      border-inline-start: 4px solid #deb45c;
+      padding: 14px 18px;
+      border-radius: 8px;
+      margin: 16px 0;
+    }
     hr {
       border: none;
       border-top: 1px solid rgba(255, 255, 255, 0.12);
@@ -60,6 +67,8 @@
       color: #94a3b8;
       font-size: 14px;
       margin-top: 30px;
+      border-top: 1px solid rgba(255, 255, 255, 0.08);
+      padding-top: 20px;
     }
   </style>
 </head>
@@ -70,35 +79,40 @@
       <span class="badge">آخر تحديث: نوفمبر 2026</span>
       <h1>سياسة الخصوصية وشروط الاستخدام<br>لعبة صعود الأبطال (Rise of the Champions)</h1>
 
-      <p>نحن نحترم خصوصيتك ونلتزم بحماية بياناتك الشخصية عند استخدامك لتطبيق ولعبة <strong>صعود الأبطال (Rise of the Champions)</strong>. توضح هذه الصفحة كيفية جمع المعلومات واستخدامها وحمايتها.</p>
+      <p>نحن نحترم خصوصيتك ونلتزم بحماية بياناتك الشخصية عند استخدامك لتطبيق ولعبة <strong>صعود الأبطال (Rise of the Champions)</strong> المنشورة رسمياً عبر الناشر <strong>محمد أحمد المغربي</strong> على نظامي Android و iOS. توضح هذه الوثيقة أنواع البيانات التي نجمعها، أسباب جمعها، وكيفية التحكم فيها وحذفها وفق معايير متجري Google Play و Apple App Store.</p>
 
-      <h2>1. المعلومات التي نجمعها</h2>
+      <h2>1. البيانات التي نجمعها</h2>
       <ul>
-        <li><strong>بيانات الحساب:</strong> عند تسجيل الدخول عبر Google أو Apple، نستخدم معرّف الحساب والبريد الإلكتروني الأساسي للمصادقة وحفظ تقدمك.</li>
-        <li><strong>بيانات الملف الشخصي:</strong> الاسم المستعار داخل اللعبة، العمر، والصورة الرمزية المختارة لعرضها أثناء المباريات.</li>
-        <li><strong>بيانات اللعب والمطابقة:</strong> نتائج المباريات، الوقت المتبقي، والحركات داخل الغرف عبر الإنترنت (Online) أو اللعب القريب عبر البلوتوث/الشبكة المحلية.</li>
+        <li><strong>بيانات المصادقة والحساب:</strong> عند تسجيل الدخول عبر Google أو Apple، نجمع معرّف المستخدم الفريد (UID) والبريد الإلكتروني الأساسي لإنشاء حسابك وحفظ تقدمك.</li>
+        <li><strong>بيانات الملف الشخصي:</strong> الاسم المستعار، العمر، البلد المختار، الصورة الرمزية، ومعرّف اللاعب الداخلي (<code>#ROC-XXXXXXXX</code>) لعرضها في قائمة الأصدقاء والمباريات.</li>
+        <li><strong>بيانات التفاعل الاجتماعي والمباريات:</strong> قائمة الأصدقاء، طلبات الصداقة، الدعوات المباشرة، وحركات الرقعة والمؤقتات داخل غرف اللعب عبر الإنترنت (Online) أو عبر البلوتوث.</li>
+        <li><strong>بيانات التشخيص والأداء:</strong> سجلات تقنية محدودة لتتبع الأعطال وتحسين استقرار التطبيق على مختلف الأجهزة.</li>
       </ul>
 
-      <h2>2. كيف نستخدم المعلومات</h2>
+      <h2>2. كيف نستخدم البيانات ومشاركتها</h2>
       <ul>
-        <li>توفير تجربة اللعب الفردي والجماعي عبر الإنترنت والبلوتوث ومزامنة الحركات في الوقت الفعلي.</li>
-        <li>حفظ إعدادات الملف الشخصي والمكافآت والشارات الخاصة باللاعب.</li>
-        <li>تحسين أداء اللعبة ومنع الغش أو إساءة استخدام غرف اللعب.</li>
+        <li>تشغيل أوضاع اللعب الفردي، اللعب المحلي عبر البلوتوث، المطابقة العشوائية، والمباريات الودية مع الأصدقاء في الوقت الفعلي.</li>
+        <li>مزامنة بيانات ملفك الشخصي وإعدادات الثيمات والشارات المكتسبة عبر السحابة.</li>
+        <li><strong>عدم البيع أو التتبع الإعلاني:</strong> نحن لا نبيع أو نؤجر بياناتك لأي طرف ثالث، ولا نستخدم أي أدوات تتبع لأغراض إعلانية (No Cross-App Tracking).</li>
+        <li><strong>مزودو الخدمات السحابية الموثوقون:</strong> نعتمد على بنية <strong>Google Firebase</strong> (للمصادقة) و<strong>Supabase</strong> (لقاعدة بيانات اللاعبين والأصدقاء وغرف اللعب) وفق معايير التشفير المعتمدة (HTTPS/TLS).</li>
       </ul>
 
-      <h2>3. مشاركة البيانات والأمان</h2>
-      <p>نحن لا نبيع أو نؤجر بياناتك الشخصية لأي طرف ثالث. تُخزّن البيانات بشكل آمن باستخدام خدمات سحابية موثوقة (Firebase و Supabase) مع تطبيق معايير التشفير والحماية المعتمدة.</p>
+      <h2>3. أذونات الجهاز (البلوتوث والشبكة المحلية)</h2>
+      <p>يطلب التطبيق أذونات <strong>البلوتوث (Bluetooth)</strong> و<strong>الأجهزة القريبة (Nearby Devices)</strong> على Android، وأذونات <strong>البلوتوث والشبكة المحلية (Local Network / Bonjour)</strong> على iOS، وذلك حصرياً لتمكين اكتشاف جهاز صديقك القريب واللعب معاً بدون إنترنت. <strong>لا يقوم التطبيق بتتبع موقعك الجغرافي (GPS) أو تخزينه إطلاقاً.</strong></p>
 
-      <h2>4. أذونات الجهاز (البلوتوث والموقع)</h2>
-      <p>قد يطلب التطبيق إذن الوصول إلى البلوتوث أو الشبكة المحلية فقط لتمكين ميزة اللعب المباشر مع الأصدقاء القريبين (Nearby/Bluetooth)، ولا يتم تتبع موقعك الجغرافي أو تخزينه.</p>
+      <h2>4. خصوصية الأطفال</h2>
+      <p>يُطلب إدخال العمر عند إعداد الملف الشخصي لضمان ملاءمة التجربة. التطبيق غير موجّه لجمع بيانات شخصية من الأطفال دون السن القانوني المعتمد (13 عاماً أو ما يحدده القانون المحلي)، وفي حال تبين تسجيل طفل دون موافقة ولي الأمر، يتم حذف بياناته فوراً عند التواصل معنا.</p>
 
-      <h2>5. خصوصية الأطفال وحذف البيانات</h2>
-      <p>يُشترط إدخال العمر للتحقق من ملاءمة الاستخدام. يحق لأي مستخدم طلب تعديل بياناته أو حذف حسابه وبياناته بالكامل في أي وقت عبر التواصل معنا.</p>
+      <h2>5. الاحتفاظ بالبيانات وحذف الحساب (حقوق المستخدم)</h2>
+      <div class="highlight-box">
+        <p><strong>آلية طلب حذف الحساب والبيانات:</strong> يحق لك في أي وقت طلب حذف حسابك وجميع بياناتك المرتبطة به نهائياً (بما في ذلك الملف الشخصي، قائمة الأصدقاء، وسجل الغرف) عبر إرسال رسالة من بريدك المسجل إلى: <strong>bdalhadyabwhmzh@gmail.com</strong> بعنوان "طلب حذف حساب"، وسيتم تنفيذ الحذف النهائي من خوادمنا خلال مدة أقصاها <strong>7 أيام عمل</strong>.</p>
+      </div>
 
-      <h2>6. شروط الاستخدام</h2>
+      <h2>6. شروط الاستخدام وحقوق الملكية</h2>
       <ul>
-        <li>يلتزم اللاعب باختيار اسم لائق وعدم استخدام أي ألفاظ مسيئة أو برامج غش.</li>
-        <li>في مباريات الأونلاين، تُطبق قواعد الوقت المحدد (5 دقائق لكل لاعب) ونظام التحذير من الخمول تلقائياً لضمان عدالة اللعب.</li>
+        <li>يلتزم المستخدم باختيار اسم عرض لائق واحترام قواعد الروح الرياضية وعدم استخدام أي وسائل غش أو محاولات اختراق لنظام المطابقة.</li>
+        <li>تخضع المباريات عبر الإنترنت لقواعد الوقت المحددة (5 دقائق لكل لاعب و15 ثانية للنقلة) وقوانين كشف انقطاع الاتصال لضمان العدالة بين اللاعبين.</li>
+        <li>الناشر الرسمي المعتمد للتطبيق على المتاجر: <strong>محمد أحمد المغربي</strong>، وجميع حقوق التصميم والبرمجة محفوظة للمطور.</li>
       </ul>
     </div>
 
@@ -109,42 +123,44 @@
       <span class="badge">Last Updated: November 2026</span>
       <h1>Privacy Policy & Terms of Use<br>Rise of the Champions</h1>
 
-      <p>We respect your privacy and are committed to protecting your personal data when using <strong>Rise of the Champions</strong>. This policy explains what information we collect, how we use it, and how we keep it secure.</p>
+      <p>We respect your privacy and are committed to protecting your personal data when using <strong>Rise of the Champions</strong>, officially published by <strong>Mohammed Ahmed Al-Maghribi</strong> on Android and iOS. This document clearly outlines what data we collect, how we use and safeguard it, and your rights regarding data deletion in compliance with Google Play and Apple App Store guidelines.</p>
 
       <h2>1. Information We Collect</h2>
       <ul>
-        <li><strong>Account Information:</strong> When signing in with Google or Apple, we use basic authentication identifiers to secure and sync your account.</li>
-        <li><strong>Player Profile:</strong> Your chosen display name, age, and optional avatar displayed during matches.</li>
-        <li><strong>Gameplay & Matchmaking Data:</strong> Match moves, timers, and room states for Online and local Bluetooth/Nearby multiplayer modes.</li>
+        <li><strong>Account & Authentication Data:</strong> When signing in with Google or Apple, we collect your unique user identifier (UID) and primary email address to authenticate and sync your account.</li>
+        <li><strong>Profile Information:</strong> Your chosen display name, age, selected country, optional avatar, and unique player ID (<code>#ROC-XXXXXXXX</code>) shown to friends and opponents.</li>
+        <li><strong>Social & Gameplay Data:</strong> Friends lists, friend requests, direct match invites, board moves, and timers within Online or Bluetooth/Nearby multiplayer sessions.</li>
+        <li><strong>Diagnostics & Stability:</strong> Minimal technical crash logs used strictly to improve app stability and performance.</li>
       </ul>
 
-      <h2>2. How We Use Information</h2>
+      <h2>2. How We Use & Share Data</h2>
       <ul>
-        <li>To enable single-player, Bluetooth nearby play, and real-time online matchmaking.</li>
-        <li>To save your player profile, unlocked rewards, and game preferences.</li>
-        <li>To maintain fair play, prevent abuse, and improve application stability.</li>
+        <li>To provide single-player, local Bluetooth multiplayer, random online matchmaking, and direct friend matches in real time.</li>
+        <li>To sync your profile settings, board themes, and unlocked rewards securely across sessions.</li>
+        <li><strong>No Data Selling or Ad Tracking:</strong> We never sell, rent, or trade your personal information to third parties, and we do not track users across third-party apps or websites.</li>
+        <li><strong>Trusted Infrastructure Providers:</strong> Data is securely processed and encrypted in transit (HTTPS/TLS) using <strong>Google Firebase</strong> (authentication) and <strong>Supabase</strong> (cloud database for profiles, friends, and match rooms).</li>
       </ul>
 
-      <h2>3. Data Sharing & Security</h2>
-      <p>We do not sell, rent, or trade your personal information to third parties. All data is securely processed and stored via trusted cloud providers (Firebase and Supabase).</p>
+      <h2>3. Device Permissions (Bluetooth & Local Network)</h2>
+      <p>The app requests <strong>Bluetooth</strong> and <strong>Nearby Devices</strong> permissions on Android, and <strong>Bluetooth</strong> and <strong>Local Network (Bonjour)</strong> permissions on iOS, strictly to discover and connect with a nearby friend's device for offline local chess matches. <strong>We never collect, track, or store your GPS location.</strong></p>
 
-      <h2>4. Device Permissions (Bluetooth & Nearby)</h2>
-      <p>Bluetooth and nearby connection permissions are used solely to discover and connect with nearby friends for local multiplayer games. We never track or store your GPS location.</p>
+      <h2>4. Children's Privacy</h2>
+      <p>Age verification is required during profile setup. We do not knowingly collect personal information from children under the applicable digital consent age (13 or local equivalent). If we become aware of such collection without parental consent, we will promptly delete the data upon notice.</p>
 
-      <h2>5. Age Requirement & Data Deletion</h2>
-      <p>Users are required to provide their age during profile setup. You may request modification or complete deletion of your account and associated data at any time.</p>
+      <h2>5. Data Retention & Account Deletion</h2>
+      <div class="highlight-box">
+        <p><strong>How to Delete Your Account & Data:</strong> You have the right to request permanent deletion of your account and all associated data (including your profile, friends list, and match records) at any time by emailing <strong>bdalhadyabwhmzh@gmail.com</strong> from your registered email with the subject "Account Deletion Request". All associated data will be permanently erased within <strong>7 business days</strong>.</p>
+      </div>
 
-      <h2>6. Terms of Use</h2>
+      <h2>6. Terms of Use & Intellectual Property</h2>
       <ul>
-        <li>Players agree to use respectful display names and refrain from cheating or exploiting the matchmaking system.</li>
-        <li>Online matches enforce time controls (5 minutes per player) and automated idle rules to ensure fair gameplay for all participants.</li>
+        <li>Players agree to maintain a respectful display name, uphold fair play, and refrain from cheating or exploiting the matchmaking system.</li>
+        <li>Online matches enforce automated time controls (5 minutes per player, 15 seconds per move) and disconnect rules to ensure fair play.</li>
+        <li>Official Store Publisher: <strong>Mohammed Ahmed Al-Maghribi</strong>. All design, code, and intellectual property rights for <strong>Rise of the Champions</strong> are reserved.</li>
       </ul>
     </div>
 
     <div class="footer">
-      <p>للتواصل والاستفسار / Contact Us: <strong>bdalhadyabwhmzh@gmail.com</strong></p>
-      <p>© 2026 Rise of the Champions. All Rights Reserved.</p>
-    </div>
-  </div>
-</body>
-</html>
+      <p>الناشر الرسمي / Official Publisher: <strong>محمد أحمد المغربي (Mohammed Ahmed Al-Maghribi)</strong></p>
+      <p>للتواصل والاستفسار / Contact Support: <strong>bdalhadyabwhmzh@gmail.com</strong></p>
+© 2026 Rise of the Champions. All Rights Reserved.
